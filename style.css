@@ -1,0 +1,5 @@
+/* Optional extra styling (Tailwind handles most UI) */
+
+#preview {
+  line-height: 1.6;
+}

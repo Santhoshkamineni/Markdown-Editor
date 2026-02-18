@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markdown Editor</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Marked JS -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+
+  <h1 class="text-3xl font-bold text-center mb-6">Markdown Editor</h1>
+
+  <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+
+    <!-- Editor -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-semibold mb-3">Editor</h2>
+      <textarea
+        id="editor"
+        class="w-full min-h-[400px] border rounded-xl p-3 font-mono"
+        placeholder="Write your markdown here..."
+      ># Welcome to Markdown Editor
+
+Type **Markdown** on the left and see preview on the right.
+
+## Features
+- Live preview
+- Clean UI
+- Easy to use
+
+> Built for your portfolio 🚀</textarea>
+    </div>
+
+    <!-- Preview -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-semibold mb-3">Preview</h2>
+      <div id="preview" class="prose max-w-none"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
